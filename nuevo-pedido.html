@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Pedido</title>
+    <link rel="stylesheet" href="style.css" </head>
+
+    <body>
+        <header id="header">
+            <div class="complete-header">
+                <a href="index.html"><img class="logo" src="./img/Zucra.png" width="128px">
+                </a>
+                <div class="links">
+                    <a href="#contacto">Ajustes</a>
+                    <a href="./login.html">Cerrar Sesion</a>
+                </div>
+            </div>
+        </header>
+        <section class="pedidos" id="actuales">
+            <h1 id="nombre">Nuevo Pedido</h1>
+            <form>
+                <label for="nombres">Nombres</label><br>
+                <input type="text" id="nombres" name="nombres"><br>
+                <label for="apellido">Apellidos</label><br>
+                <input type="text" id="apellido" name="apellido">
+                <br>
+                <br>
+
+                <label for="categorias">Elige una categoria</label>
+                <br>
+
+                <select id="categorias">
+                    <option value="Bodas">Bodas</option>
+                    <option value="Ninos">Ninos</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Hombres">Hombres</option>
+                    <option value="Postres">Postres</option>
+                    <option value="Todos los pasteles">pasteles</option>
+                  </select>
+                <br>
+
+                <label for="pasteles">Elige un pastel</label>
+                <br>
+
+                <select id="pasteles">
+                      <option value="Pastel 1">Pastel 1</option>
+                      <option value="Pastel 2">Pastel 2</option>
+                      <option value="Pastel 3">Pastel 3</option>
+                      <option value="Pastel 4">Pastel 4</option>
+                      <option value="Pastel 5">Pastel 5</option>
+                      <option value="Pastel 6">Pastel 6</option>
+                      </select>
+                <br>
+                <br>
+                <input type="radio" id="Tarjeta" name="Pago" value="Tarjeta" checked>
+                <label for="Tarjeta">Tarjeta</label>
+                <input type="radio" id="Efectivo" name="Pago" value="Efectivo" checked>
+                <label for="Efectivo">Efectivo</label>
+
+                <div class="botones">
+
+                    <input type="reset" value="Restablecer">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+    </body>
+
+</html>
